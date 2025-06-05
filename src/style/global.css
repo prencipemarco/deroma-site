@@ -31,7 +31,6 @@ a:hover, button:hover {
 
 /* Header */
 header {
-  background-color: var(--color-bg-alt);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
@@ -66,7 +65,6 @@ header {
 
 /* Pulsanti nella pagina Auth */
 button {
-  background-color: var(--color-accent);
   border: none;
   padding: 0.75rem 1.25rem;
   border-radius: 0.5rem;
@@ -118,4 +116,13 @@ button:hover,
   background-color: var(--color-accent); /* nessun effetto hover */
   color: var(--color-bg);
   filter: none;
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none;    /* Firefox */
 }

@@ -181,38 +181,6 @@
           "image": "src/assets/bevande/placeholder.png"
         }
   ],
-  "Friggitoria": [
-        {
-          "name": "PATATINE FRITTE",
-          "ingredients": "Patatine fritte* con salsa De Roma",
-          "price": 4.00,
-          "image": "src/assets/bevande/placeholder.png"
-        },
-        {
-          "name": "MOZZARELLA FRITTA",
-          "ingredients": "Mozzarelline fritte",
-          "price": 2.50,
-          "image": "src/assets/bevande/placeholder.png"
-        },
-        {
-          "name": "FIORI DI ZUCCA",
-          "ingredients": "Fiori di zucca fritti* con salsa De Roma",
-          "price": 5.00,
-          "image": "src/assets/bevande/placeholder.png"
-        },
-        {
-          "name": "MOZZARELLA IN CARROZZA",
-          "ingredients": "Mozzarella in carrozza fritta* con salsa De Roma",
-          "price": 5.00,
-          "image": "src/assets/bevande/placeholder.png"
-        },
-        {
-          "name": "CROCCHETTE DI PATATE",
-          "ingredients": "Crocchette di patate fritte* con salsa De Roma",
-          "price": 5.00,
-          "image": "src/assets/bevande/placeholder.png"
-        }
-  ],
   "Hamburger": [
         {
           "name": "CLASSICO",
@@ -272,6 +240,38 @@
           "name": "VEGETARIANO",
           "ingredients": "Burger di vegetali grigliati e scamorza*, cheddar, insalata, pomodoro, ketchup, pane artigianale",
           "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Friggitoria": [
+        {
+          "name": "PATATINE FRITTE",
+          "ingredients": "Patatine fritte* con salsa De Roma",
+          "price": 4.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MOZZARELLA FRITTA",
+          "ingredients": "Mozzarelline fritte",
+          "price": 2.50,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "FIORI DI ZUCCA",
+          "ingredients": "Fiori di zucca fritti* con salsa De Roma",
+          "price": 5.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MOZZARELLA IN CARROZZA",
+          "ingredients": "Mozzarella in carrozza fritta* con salsa De Roma",
+          "price": 5.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "CROCCHETTE DI PATATE",
+          "ingredients": "Crocchette di patate fritte* con salsa De Roma",
+          "price": 5.00,
           "image": "src/assets/bevande/placeholder.png"
         }
   ],
