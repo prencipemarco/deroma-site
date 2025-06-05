@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+/* Colori base */
+:root {
+  --color-bg: #121212;        /* sfondo nero */
+  --color-text: #f0c419;      /* oro/giallo chiaro */
+  --color-accent: #d4af37;    /* oro più intenso per hover, bottoni */
+  --color-bg-alt: #1e1e1e;    /* grigio scuro per card */
+  --color-text-muted: #bfa54a; /* oro più chiaro per testi secondari */
+}
+
+/* Background generale */
+body, #root {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Link e bottoni */
+a, button {
+  color: var(--color-accent);
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+a:hover, button:hover {
+  color: var(--color-text);
+}
+
+/* Header */
+header {
+  background-color: var(--color-bg-alt);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+/* Card menu */
+.menu-card {
+  background-color: var(--color-bg-alt);
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+/* Testo secondario nelle card */
+.menu-card p {
+  color: var(--color-text-muted);
+}
+
+/* Titoli sezioni menu centrati */
+.menu-section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Testo card allineato a sinistra */
+.menu-card h4,
+.menu-card p {
+  text-align: left;
+}
+
+/* Pulsanti nella pagina Auth */
+button {
+  background-color: var(--color-accent);
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+}
+
+/* Input */
+input {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-accent);
+  color: var(--color-text);
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+input::placeholder {
+  color: var(--color-text-muted);
+}
+
+/* Scrollbar (opzionale) */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-accent);
+  border-radius: 4px;
+}

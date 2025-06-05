@@ -1,0 +1,305 @@
+{
+  "Pinse Rosse": [
+        {
+          "name": "MARINARA",
+          "ingredients": "pomodoro, olio, aglio",
+          "price": 5.00,
+          "image": "../assets/pinserosse/marinara.png"
+        },
+        {
+          "name": "MARGHERITA",
+          "ingredients": "pomodoro, mozzarella",
+          "price": 6.00,
+          "image": "../assets/pinserosse/margherita.png"
+        },
+        {
+          "name": "NAPOLI",
+          "ingredients": "pomodoro, mozzarella, capperi, alici di Cetara, pomodorini semi dry",
+          "price": 8.50,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "DIAVOLA",
+          "ingredients": "pomodoro, mozzarella, spianata romana",
+          "price": 8.50,
+          "image": "../assets/pinserosse/diavola.png"
+        },
+        {
+          "name": "WURSTEL E PATATINE",
+          "ingredients": "pomodoro, mozzarella, wurstel, patatine fritte*",
+          "price": 7.50,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "BOSCAIOLA",
+          "ingredients": "pomodoro, mozzarella, funghi champignon, salsiccia, caciocavallo podolico",
+          "price": 9.50,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "TONNO E CIPOLLA",
+          "ingredients": "pomodoro, mozzarella, filetti di tonno di Cetara, cipolla, pomodorini semi dry, olive taggiasche",
+          "price": 10.00,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "CAPRICCIOSA",
+          "ingredients": "pomodoro, mozzarella, funghi champignon, carciofi, olive taggiasche, prosciutto cotto",
+          "price": 9.50,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "ORTOLANA",
+          "ingredients": "pomodoro, mozzarella, zucchine, melanzane, peperoni, pomodorini semidry",
+          "price": 9.00,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "CALABRA",
+          "ingredients": "pomodoro, mozzarella, cipolla, nduja di Spilinga, caciocavallo e podolico",
+          "price": 10.00,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "CRUDO",
+          "ingredients": "pomodoro, mozzarella, prosciutto crudo, stracciatella",
+          "price": 10.50,
+          "image": "../assets/pinserosse/placeholder.png"
+        },
+        {
+          "name": "CETARA",
+          "ingredients": "pomodoro, mozzarella, Alici di cetara, pomodorini semi dry, stracciatella",
+          "price": 10.00,
+          "image": "../assets/pinserosse/placeholder.png"
+        }
+  ],
+  "Pinse Bianche": [
+        {
+          "name": "4 FORMAGGI",
+          "ingredients": "mozzarella, gorgonzola, brie, Parmigiano Reggiano DOP, caciocavallo podolico",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MORTAZZA",
+          "ingredients": "mozzarella, mortadella, granella di pistacchi, stracciatella",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "FRIARIELLI",
+          "ingredients": "mozzarella, salsiccia, friarielli, pomodorini semi dry",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "RUSTICA",
+          "ingredients": "mozzarella, prosciutto cotto, patata al forno",
+          "price": 8.50,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "TESTACCIO",
+          "ingredients": "mozzarella, salsiccia, patata al forno, caciocavallo podolico",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "CRUDO E FRIARIELLI",
+          "ingredients": "mozzarella, prosciutto crudo, friarielli, pomodorini semi dry",
+          "price": 11.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "SPIANATA",
+          "ingredients": "mozzarella, spianata calabra, stracciatella, cipolla",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MIELE",
+          "ingredients": "mozzarella, prosciutto crudo, brie**, miele",
+          "price": 11.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "PERE E NOCI",
+          "ingredients": "mozzarella, noci, gorgonzola**, pere",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "GUANCIALINA",
+          "ingredients": "mozzarella, guanciale croccante, patate al forno, olive taggiasche",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "SCAROLA",
+          "ingredients": "mozzarella, scarola stufata, salsiccia, olive taggiasche",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "BRIE",
+          "ingredients": "mozzarella, guanciale croccante, brie**, olive taggiasche",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Pinse Romane": [
+        {
+          "name": "CARBONARA",
+          "ingredients": "mozzarella, guanciale croccante, crema di tuorlo pastorizzato, crema di pecorino romano DOP, pepe",
+          "price": 11.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "AMATRICIANA",
+          "ingredients": "pomodoro, mozzarella, guanciale croccante, crema di pecorino romano DOP",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "GRICIA",
+          "ingredients": "mozzarella, crema di pecorino romano DOP, guanciale croccante, pepe",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "CACIO E PEPE",
+          "ingredients": "mozzarella, crema di pecorino romano DOP, pepe",
+          "price": 9.00,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Pinse Dolci": [
+        {
+          "name": "NUTELLA E COCCO",
+          "ingredients": "base bianca con nutella e cocco",
+          "price": 8.50,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Friggitoria": [
+        {
+          "name": "PATATINE FRITTE",
+          "ingredients": "Patatine fritte* con salsa De Roma",
+          "price": 4.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MOZZARELLA FRITTA",
+          "ingredients": "Mozzarelline fritte",
+          "price": 2.50,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "FIORI DI ZUCCA",
+          "ingredients": "Fiori di zucca fritti* con salsa De Roma",
+          "price": 5.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "MOZZARELLA IN CARROZZA",
+          "ingredients": "Mozzarella in carrozza fritta* con salsa De Roma",
+          "price": 5.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "CROCCHETTE DI PATATE",
+          "ingredients": "Crocchette di patate fritte* con salsa De Roma",
+          "price": 5.00,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Hamburger": [
+        {
+          "name": "CLASSICO",
+          "ingredients": "200g di scottona*, bacon croccante, cheddar, cipolla caramellata, insalata, pomodoro, salsa bbq, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "NDUJA",
+          "ingredients": "200g di scottona*, spianata calabra, cheddar, cipolla caramellata, insalata, pomodoro, salsa nduja, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "GUACA",
+          "ingredients": "200g di scottona*, cheddar, cetriolini sottaceto, cipolla caramellata, insalata, pomodoro, salsa guacamole, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "FRIARIELLO",
+          "ingredients": "200g di scottona*, scamorza, friarielli, pomodorini semi dry, insalata, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "SCAROLA",
+          "ingredients": "200g di scottona*, scamorza, scarola stufata, insalata, maionese alle olive taggiasche, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "PULLED PORK",
+          "ingredients": "Pulled pork cbt*, bacon, insalata, pomodoro, salsa bbq, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "PULLED CHICKEN",
+          "ingredients": "Pulled chicken cbt*, patate al forno, insalata, ketchup di datterino giallo, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "CARBONARO",
+          "ingredients": "200g di scottona*, guanciale croccante, pecorino romano DOP, crema di tuorlo pastorizzato, pepe, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "POLLO CROCCANTE",
+          "ingredients": "Straccetti di petto di pollo panati e fritti*, cheddar, insalata, pomodoro, salsa De Roma, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        },
+        {
+          "name": "VEGETARIANO",
+          "ingredients": "Burger di vegetali grigliati e scamorza*, cheddar, insalata, pomodoro, ketchup, pane artigianale",
+          "price": 10.00,
+          "image": "src/assets/bevande/placeholder.png"
+        }
+  ],
+  "Bevande": [
+        {
+          "name": "ACQUA",
+          "price": 1.50,
+          "image": "src/assets/bevande/acqua.png"
+        },
+        {
+          "name": "COCA COLA",
+          "price": 2.50,
+          "image": "src/assets/bevande/cocacola.png"
+        },
+        {
+          "name": "FANTA",
+          "price": 2.50,
+          "image": "src/assets/bevande/fanta.png"
+        },
+        {
+          "name": "SPRITE",
+          "price": 2.50,
+          "image": "src/assets/bevande/sprite.png"
+        },
+        {
+          "name": "BIRRA ARTIGIANALE",
+          "price": 4.00,
+          "image": "src/assets/bevande/leko.png"
+        }
+  ]
+}
