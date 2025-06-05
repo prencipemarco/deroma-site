@@ -18,12 +18,12 @@ body, #root {
   padding: 0;
 }
 
-/* Link e bottoni */
+/* Link e bottoni 
 a, button {
   color: var(--color-accent);
   transition: color 0.3s ease;
   cursor: pointer;
-}
+}*/
 
 a:hover, button:hover {
   color: var(--color-text);
@@ -100,4 +100,22 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-thumb {
   background-color: var(--color-accent);
   border-radius: 4px;
+}
+
+/* Pulsanti gialli con testo nero in grassetto, senza hover */
+.btn-yellow {
+  background-color: var(--color-accent); /* giallo */
+  color: var(--color-bg);                /* nero */
+  font-weight: 700;                      /* grassetto */
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover,
+.btn-yellow:hover {
+  background-color: var(--color-accent); /* nessun effetto hover */
+  color: var(--color-bg);
+  filter: none;
 }
