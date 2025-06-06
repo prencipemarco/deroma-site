@@ -97,15 +97,15 @@ function Header({ cartCount = 0, cartItems = [], removeItem, totalPrice = 0 }) {
             <img
               src="/icons/user_m.png"
               alt="User"
-              className="w-8 h-8 hover:scale-110 transition-transform"
+              className="w-7 h-7 hover:scale-110 transition-transform"
             />
           </Link>
 
           <div className="relative cursor-pointer" onClick={toggleCart}>
             <img
-              src={cartOpen ? "/icons/close-yellow.png" : "/icons/carts.png"}
+              src={cartOpen ? "/icons/remove.png" : "/icons/carts.png"}
               alt="Cart"
-              className="mr-10 w-8 h-8 hover:scale-110 transition-transform"
+              className="mr-10 w-7 h-7 hover:scale-110 transition-transform"
             />
             {cartCount > 0 && !cartOpen && (
               <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs rounded-full w-5 h-5 flex items-center justify-center">
