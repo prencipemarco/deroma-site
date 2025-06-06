@@ -51,42 +51,40 @@ function Header({ cartCount = 0 }) {
           : "opacity-0 pointer-events-none"
       }`}
     >
-      {/* LOGO */}
-      <Link to="/">
+      {/* LOGO - visibile solo su desktop */}
+      <Link to="/" className="ml-10 md:block hidden">
         <img
           src="/logo.png"
           alt="Logo"
-          className="ml-10 w-10 h-10 hover:scale-110 transition-transform"
+          className="w-10 h-10 hover:scale-110 transition-transform"
         />
       </Link>
 
       {/* MENU CENTRALE */}
-      {/* MENU CENTRALE */}
-<nav className="flex md:gap-6 gap-2 text-sm font-semibold overflow-x-auto scrollbar-none md:overflow-visible px-1">
-  {sections.map((section) => {
-    const id = section.toLowerCase().replace(/\s/g, "-");
-    const isActive = activeSection === section;
+      <nav className="flex md:gap-3 gap-1 text-sm font-medium tracking-wide overflow-x-auto scrollbar-none md:overflow-visible px-1">
+        {sections.map((section) => {
+          const id = section.toLowerCase().replace(/\s/g, "-");
+          const isActive = activeSection === section;
 
-    return (
-      <button
-        key={id}
-        onClick={() => scrollToSection(id)}
-        className={`whitespace-nowrap px-4 py-2 rounded-full transition-all duration-300 flex-shrink-0
-          ${
-            isActive
-              ? "bg-yellow-400 text-black"
-              : "bg-transparent text-yellow-400 hover:bg-yellow-400 hover:text-black"
-          }`}
-      >
-        {section}
-      </button>
-    );
-  })}
-</nav>
+          return (
+            <button
+              key={id}
+              onClick={() => scrollToSection(id)}
+              className={`whitespace-nowrap px-3 py-1.5 rounded-full transition-all duration-300 flex-shrink-0
+                ${
+                  isActive
+                    ? "bg-yellow-400 text-black shadow-md"
+                    : "bg-transparent text-yellow-400 hover:bg-yellow-400 hover:text-black"
+                }`}
+            >
+              {section}
+            </button>
+          );
+        })}
+      </nav>
 
-
-      {/* ICONE UTENTE + CARRELLO */}
-      <div className="flex items-center gap-6">
+      {/* ICONE UTENTE + CARRELLO - visibili solo su desktop */}
+      <div className="items-center gap-6 md:flex hidden">
         <Link to="/auth">
           <img
             src="/icons/user_m.png"

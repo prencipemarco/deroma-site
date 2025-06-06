@@ -17,37 +17,34 @@ function MobileBottomBar({ cartCount = 0 }) {
   if (!showBar) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 w-full z-50 md:hidden bg-white/10 backdrop-blur-lg py-3 px-6 flex justify-between items-center text-yellow-400">
-      {/* Logo */}
-      <Link to="/" className="flex-1 flex justify-start">
-        <img
-          src="/logo.png"
-          alt="Logo"
-          className="w-6 h-6 hover:scale-110 transition-transform"
-        />
-      </Link>
+    <div className={`fixed bottom-4 left-0 w-full z-50 md:hidden flex justify-center items-center pointer-events-none transition-all ${showBar ? "animate-bounceInUp" : ""}`}>
+      <div className="flex justify-around gap-6 w-[90%] pointer-events-auto">
+        
+        {/* User Icon */}
+        <Link to="/auth" className="flex-1 flex justify-center">
+          <div className="w-full max-w-[90px] bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+            <img src="/icons/user_m.png" alt="User" className="w-7 h-7" />
+          </div>
+        </Link>
 
-      {/* User Icon */}
-      <Link to="/auth" className="flex-1 flex justify-center">
-        <img
-          src="/icons/user.png"
-          alt="User"
-          className="w-6 h-6 hover:scale-110 transition-transform"
-        />
-      </Link>
+        {/* Logo */}
+        <Link to="/" className="flex-1 flex justify-center">
+          <div className="w-full max-w-[90px] bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+            <img src="/logo.png" alt="Logo" className="w-7 h-7" />
+          </div>
+        </Link>
 
-      {/* Cart Icon */}
-      <div className="flex-1 flex justify-end relative">
-        <img
-          src="/icons/cart.png"
-          alt="Cart"
-          className="w-6 h-6 hover:scale-110 transition-transform"
-        />
-        {cartCount > 0 && (
-          <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs rounded-full w-5 h-5 flex items-center justify-center">
-            {cartCount}
-          </span>
-        )}
+        {/* Cart Icon */}
+        <div className="flex-1 flex justify-center relative">
+          <div className="w-full max-w-[90px] bg-white/10 backdrop-blur-md p-3 rounded-2xl shadow-lg flex items-center justify-center hover:scale-105 transition-transform">
+            <img src="/icons/carts.png" alt="Cart" className="w-7 h-7" />
+          </div>
+          {cartCount > 0 && (
+            <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-[10px] rounded-full w-5 h-5 flex items-center justify-center shadow-md">
+              {cartCount}
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );

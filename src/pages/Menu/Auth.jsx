@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Auth() {
   const [isRegister, setIsRegister] = useState(false);
@@ -36,6 +37,12 @@ function Auth() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black-50 p-4">
+      <Link
+        to="/"
+        className="absolute top-4 left-4 text-yellow-500 hover:text-yellow-300 text-3xl font-bold"
+      >
+        <img src="/icons/arrow.png" alt="Torna" className="w-6 h-6" />
+      </Link>
       <div className="max-w-md w-full bg-yellow-100 p-8 rounded-lg shadow">
         <h2 className="text-black text-2xl font-bold mb-6 text-center">
           {isRegister ? "Registrati" : "Accedi"}

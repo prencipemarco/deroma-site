@@ -13,7 +13,7 @@ function MenuSection({ title, items }) {
         {title}
       </h2>
 
-      <div className="grid gap-6 grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))]">
+      <div className="grid gap-6 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
         {items.map((item, index) => (
           <div
             key={index}
@@ -24,7 +24,7 @@ function MenuSection({ title, items }) {
               <img
                 src={item.image}
                 alt={item.name}
-                className="w-full h-52 object-cover rounded-lg mb-4"
+                className="w-full h-48 object-cover rounded-lg mb-4"
               />
             )}
             <h4 className="text-xl font-semibold text-yellow-400 mb-1">
