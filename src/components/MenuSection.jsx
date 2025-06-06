@@ -63,13 +63,13 @@ function MenuSection({ title, items, cartOpen, addToCart }) {
             <div className="mt-6 flex justify-between">
               <button
                 onClick={() => console.log("Aggiunto ai preferiti")}
-                className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-black rounded-full hover:bg-yellow-400"
+                className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-black text-xs font-bold rounded-full hover:bg-yellow-400"
               >
                 <FaHeart /> Preferiti
               </button>
               <button
                 onClick={() => setSelectedItem(null)}
-                className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white rounded-full hover:bg-gray-600"
+                className="flex items-center gap-2 px-4 py-2 bg-gray-700 text-white text-xs font-bold rounded-full hover:bg-gray-600"
               >
                 <FaTimes /> Chiudi
               </button>
@@ -78,7 +78,7 @@ function MenuSection({ title, items, cartOpen, addToCart }) {
                   addToCart(selectedItem);
                   setSelectedItem(null);
                 }}
-                className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-black rounded-full hover:bg-yellow-400"
+                className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-black text-xs font-bold rounded-full hover:bg-yellow-400"
               >
                 <FaCartPlus /> Carrello
               </button>

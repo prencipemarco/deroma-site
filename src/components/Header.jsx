@@ -68,7 +68,7 @@ function Header({ cartCount = 0, cartItems = [], removeItem, totalPrice = 0 }) {
 
         {/* Menu centrale */}
         <nav
-          className="flex md:gap-3 gap-1 text-sm font-medium tracking-wide overflow-x-auto scrollbar-none md:overflow-visible px-1 transition-all duration-300"
+          className="flex md:gap-3 gap-1 text-xs font-medium tracking-wide overflow-x-auto scrollbar-none md:overflow-visible px-1 transition-all duration-300"
         >
           {sections.map((section) => {
             const id = section.toLowerCase().replace(/\s/g, "-");
@@ -97,7 +97,7 @@ function Header({ cartCount = 0, cartItems = [], removeItem, totalPrice = 0 }) {
             <img
               src="/icons/user_m.png"
               alt="User"
-              className="w-7 h-7 hover:scale-110 transition-transform"
+              className="w-8 h-8 hover:scale-110 transition-transform"
             />
           </Link>
 
@@ -105,7 +105,7 @@ function Header({ cartCount = 0, cartItems = [], removeItem, totalPrice = 0 }) {
             <img
               src={cartOpen ? "/icons/remove.png" : "/icons/carts.png"}
               alt="Cart"
-              className="mr-10 w-7 h-7 hover:scale-110 transition-transform"
+              className="mr-10 w-8 h-8 hover:scale-110 transition-transform"
             />
             {cartCount > 0 && !cartOpen && (
               <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs rounded-full w-5 h-5 flex items-center justify-center">
