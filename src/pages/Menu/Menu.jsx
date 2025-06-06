@@ -76,7 +76,8 @@ function Menu() {
         setCartOpen={setCartOpen}
         cartItems={cartItems}
         removeItem={removeItem}
-        addToCart={addToCart}
+        addToCart={addToCart}  // <--- aggiunto qui
+        totalPrice={totalPrice}
       />
     </>
   )
