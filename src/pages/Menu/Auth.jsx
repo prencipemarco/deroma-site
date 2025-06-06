@@ -1,66 +1,75 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { supabase } from "../../backend/supabase"; // assicurati che il path sia corretto
+import { Link, useNavigate } from "react-router-dom";
 
 function Auth() {
   const [isRegister, setIsRegister] = useState(false);
   const [form, setForm] = useState({ email: "", password: "", confirmPassword: "" });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const navigate = useNavigate();
 
   const toggleMode = () => {
     setIsRegister(!isRegister);
     setForm({ email: "", password: "", confirmPassword: "" });
+    setError(null);
   };
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setError(null);
+
     if (isRegister) {
       if (form.password !== form.confirmPassword) {
-        alert("Le password non coincidono!");
+        setError("Le password non coincidono!");
         return;
       }
-      alert(`Registrazione con email: ${form.email}`);
+
+      setLoading(true);
+      const { error } = await supabase.auth.signUp({
+        email: form.email,
+        password: form.password,
+      });
+      setLoading(false);
+
+      if (error) {
+        setError(error.message);
+      } else {
+        alert("Registrazione effettuata! Controlla la tua email per confermare.");
+        setIsRegister(false);
+        setForm({ email: "", password: "", confirmPassword: "" });
+      }
     } else {
-      alert(`Login con email: ${form.email}`);
+      setLoading(true);
+      const { error } = await supabase.auth.signUp({
+        email: form.email,
+        password: form.password,
+      });
+      setLoading(false);
+
+      if (error) {
+        setError(error.message);
+      } else {
+        alert("Accesso effettuato!");
+        // Reindirizza o aggiorna lo stato dell'app
+        navigate("/"); // esempio di redirect alla home
+      }
     }
-  };
-
-  const handleGoogle = () => {
-    alert("Login/Registrazione con Google non implementato ancora.");
-  };
-
-  const handleApple = () => {
-    alert("Login/Registrazione con Apple non implementato ancora.");
   };
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black p-4 relative">
-      <Link
-        to="/"
-        className="absolute top-4 left-4 text-yellow-500 hover:text-yellow-300 text-3xl font-bold"
-      >
-        <img src="/icons/arrow.png" alt="Torna" className="w-6 h-6" />
-      </Link>
       <div className="max-w-md w-full bg-yellow-100 p-8 rounded-lg shadow">
         <h2 className="text-black text-2xl font-bold mb-6 text-center">
           {isRegister ? "Registrati" : "Accedi"}
         </h2>
 
-        <div className="flex flex-col space-y-3 mb-6">
-          <button onClick={handleGoogle} className="btn-yellow flex items-center justify-center space-x-2">
-            <img src="/icons/google.png" alt="Google" className="w-5 h-5" />
-            <span>{isRegister ? "Registrati con Google" : "Accedi con Google"}</span>
-          </button>
-
-          <button onClick={handleApple} className="btn-yellow flex items-center justify-center space-x-2">
-            <img src="/icons/apple.png" alt="Apple" className="w-5 h-5" />
-            <span>{isRegister ? "Registrati con Apple" : "Accedi con Apple"}</span>
-          </button>
-        </div>
-
-        <hr className="my-6 border-t border-gray-300" />
+        {error && <p className="mb-4 text-red-600 font-semibold">{error}</p>}
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
@@ -92,8 +101,8 @@ function Auth() {
               className="input-gold"
             />
           )}
-          <button type="submit" className="btn-yellow w-full">
-            {isRegister ? "Registrati" : "Accedi"}
+          <button type="submit" disabled={loading} className="btn-yellow w-full">
+            {loading ? "Caricamento..." : isRegister ? "Registrati" : "Accedi"}
           </button>
         </form>
 

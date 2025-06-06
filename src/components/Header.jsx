@@ -68,7 +68,7 @@ function Header({ cartCount = 0, cartItems = [], removeItem, totalPrice = 0 }) {
 
         {/* Menu centrale */}
         <nav
-          className="flex md:gap-3 gap-1 text-xs font-medium tracking-wide overflow-x-auto scrollbar-none md:overflow-visible px-1 transition-all duration-300"
+          className="flex md:gap-3 gap-1 text-xs font-bold tracking-wide overflow-x-auto scrollbar-none md:overflow-visible px-1 transition-all duration-300"
         >
           {sections.map((section) => {
             const id = section.toLowerCase().replace(/\s/g, "-");
