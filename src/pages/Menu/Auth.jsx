@@ -36,7 +36,7 @@ function Auth() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-black-50 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-black p-4 relative">
       <Link
         to="/"
         className="absolute top-4 left-4 text-yellow-500 hover:text-yellow-300 text-3xl font-bold"
@@ -60,7 +60,6 @@ function Auth() {
           </button>
         </div>
 
-        {/* Linea divisoria */}
         <hr className="my-6 border-t border-gray-300" />
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -71,7 +70,7 @@ function Auth() {
             value={form.email}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="input-gold"
           />
           <input
             type="password"
@@ -80,7 +79,7 @@ function Auth() {
             value={form.password}
             onChange={handleChange}
             required
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            className="input-gold"
           />
           {isRegister && (
             <input
@@ -90,7 +89,7 @@ function Auth() {
               value={form.confirmPassword}
               onChange={handleChange}
               required
-              className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="input-gold"
             />
           )}
           <button type="submit" className="btn-yellow w-full">

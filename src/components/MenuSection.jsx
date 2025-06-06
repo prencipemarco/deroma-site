@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { FaHeart, FaCartPlus, FaTimes } from "react-icons/fa";
 
-function MenuSection({ title, items }) {
+function MenuSection({ title, items, cartOpen, addToCart }) {
   const [selectedItem, setSelectedItem] = useState(null);
 
   return (
     <section
       id={title.toLowerCase().replace(/\s/g, "-")}
-      className="-mt-6 mb-12 px-4 max-w-screen-xl mx-auto"
+      className={`-mt-6 mb-12 px-4 max-w-screen-xl mx-auto transition-all duration-500 ${
+        cartOpen ? "md:mr-[360px]" : ""
+      }`}
     >
       <h2 className="menu-section-title text-yellow-400 text-3xl font-bold mb-8 text-center">
         {title}
@@ -32,9 +34,7 @@ function MenuSection({ title, items }) {
             </h4>
             <p className="text-sm italic mb-1">{item.ingredients}</p>
             <p className="text-sm mb-2">{item.description}</p>
-            <p className="font-bold text-yellow-500">
-              {item.price.toFixed(2)} €
-            </p>
+            <p className="font-bold text-yellow-500">{item.price.toFixed(2)} €</p>
           </div>
         ))}
       </div>
@@ -42,7 +42,7 @@ function MenuSection({ title, items }) {
       {/* MODALE */}
       {selectedItem && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
-          <div className="bg-[#1e1e1e] text-yellow-300 p-6 rounded-xl max-w-md w-full shadow-2xl relative">
+          <div className="bg-[#1e1e1e]/70 backdrop-blur-xl text-yellow-300 p-6 rounded-xl max-w-md w-full shadow-2xl relative">
             {selectedItem.image && (
               <img
                 src={selectedItem.image}
@@ -74,7 +74,10 @@ function MenuSection({ title, items }) {
                 <FaTimes /> Chiudi
               </button>
               <button
-                onClick={() => console.log("Aggiunto al carrello")}
+                onClick={() => {
+                  addToCart(selectedItem);
+                  setSelectedItem(null);
+                }}
                 className="flex items-center gap-2 px-4 py-2 bg-yellow-500 text-black rounded-full hover:bg-yellow-400"
               >
                 <FaCartPlus /> Carrello
